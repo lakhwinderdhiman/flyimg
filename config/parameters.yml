@@ -115,7 +115,7 @@ options_keys:
 # Default options values
 default_options:
   quality: 90
-  output: auto
+  output: avif
   unsharp: null
   sharpen: null
   blur: null

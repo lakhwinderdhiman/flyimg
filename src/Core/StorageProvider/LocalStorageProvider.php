@@ -43,7 +43,7 @@ class LocalStorageProvider implements ServiceProviderInterface
                 $hostname = $schema . '://' . $host . ($port == '80' ? '' : ':' . $port);
             }
 
-            return $hostname . '/' . UPLOAD_WEB_DIR . '%s';
+            return $hostname . '/https://nailspot.s3.ap-south-1.amazonaws.com/%s';
         };
     }
 }

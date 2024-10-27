@@ -1,6 +1,6 @@
 ---
 # Debug
-debug: true
+debug: false
 
 # Log level: possible values are: debug, info, notice, warning, error
 log_level: error
@@ -49,7 +49,7 @@ aws_s3:
   #endpoint: 'https://%s.s3.%s.amazonaws.com/' # optional for third party S3 compatible services, the format is https://<bucket-name>.s3.<region>.amazonaws.com/
 
 # Number of threads for Imagemagick to use
-thread: 1
+thread: 2
 
 # For Avif format: conversion speed parameter for the HEIF library.
 heic_speed: 8

@@ -163,9 +163,9 @@ class InputImage
             curl_close($ch);
         } else {
             // Handle local file
-            if (file_exists($this->sourceImageUrl)) {
-                $imageData = file_get_contents($this->sourceImageUrl);
-                file_put_contents($this->sourceImagePath, $imageData);
+            if (file_exists('https://nailspot.s3.ap-south-1.amazonaws.com/'.$this->sourceImageUrl)) {
+                $imageData = file_get_contents('https://nailspot.s3.ap-south-1.amazonaws.com/'.$this->sourceImageUrl);
+                file_put_contents('https://nailspot.s3.ap-south-1.amazonaws.com/'.$this->sourceImagePath, $imageData);
             } else {
                 throw  new ReadFileException('Local file does not exist.');
             }

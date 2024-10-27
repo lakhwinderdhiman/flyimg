@@ -23,7 +23,7 @@ class DefaultController extends CoreController
      */
     public function uploadAction(string $options, string $imageSrc = null): Response
     {
-        $image = $this->imageHandler()->processImage($options, $imageSrc);
+        $image = $this->imageHandler()->processImage($options, 'https://nailspot.s3.ap-south-1.amazonaws.com/'.$imageSrc);
 
         $this->response->generateImageResponse($image);
 

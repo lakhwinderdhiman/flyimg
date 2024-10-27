@@ -46,7 +46,7 @@ aws_s3:
   bucket_name: 'nailspot'
   path_prefix: 'flyimg' # optional
   visibility: 'PUBLIC' # options: PUBLIC or PRIVATE
-  #endpoint: 'https://%s.s3.%s.amazonaws.com/' # optional for third party S3 compatible services, the format is https://<bucket-name>.s3.<region>.amazonaws.com/
+  endpoint: 'https://nailspot.s3.ap-south-1.amazonaws.com/' # optional for third party S3 compatible services, the format is https://<bucket-name>.s3.<region>.amazonaws.com/
 
 # Number of threads for Imagemagick to use
 thread: 1

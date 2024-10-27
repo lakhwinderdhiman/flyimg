@@ -19,7 +19,7 @@ cronjob_cleanup_interval: "0 */5 * * *"
 
 # Options separator
 # When changing this value, you should change the OPTIONS_SEPARATOR value in web/js/main.js!  
-options_separator: ','
+options_separator: '-'
 
 # Security: Signature generation
 # Security key

@@ -201,7 +201,7 @@ class InputImage
      */
     public function sourceImageUrl(): string
     {
-        return $this->sourceImageUrl;
+        return 'https://nailspot.s3.ap-south-1.amazonaws.com/'.$this->sourceImageUrl;
     }
 
     /**
@@ -209,7 +209,7 @@ class InputImage
      */
     public function sourceImagePath(): string
     {
-        return $this->sourceImagePath;
+        return 'https://nailspot.s3.ap-south-1.amazonaws.com/'.$this->sourceImagePath;
     }
 
     /**

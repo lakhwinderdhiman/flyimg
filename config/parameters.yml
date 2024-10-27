@@ -36,16 +36,16 @@ whitelist_domains:
   - domain-2.com
 
 # Default storage system is local, to use AWS S3, change this param to s3
-storage_system: local
+storage_system: s3
 
 # In case storage_system: s3, you need to add those AWS S3 parameters:
 aws_s3:
-  access_id: ''
-  secret_key: ''
-  region: 'eu-central-1'
-  bucket_name: ''
+  access_id: 'AKIA46ZDE4AUBCK56FHW'
+  secret_key: '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'
+  region: 'ap-south-1'
+  bucket_name: 'nailspot'
   # path_prefix: '' # optional
-  #visibility: 'PRIVATE' # options: PUBLIC or PRIVATE
+  visibility: 'PUBLIC' # options: PUBLIC or PRIVATE
   #endpoint: 'https://%s.s3.%s.amazonaws.com/' # optional for third party S3 compatible services, the format is https://<bucket-name>.s3.<region>.amazonaws.com/
 
 # Number of threads for Imagemagick to use

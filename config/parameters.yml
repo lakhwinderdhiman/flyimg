@@ -19,7 +19,7 @@ cronjob_cleanup_interval: "0 */5 * * *"
 
 # Options separator
 # When changing this value, you should change the OPTIONS_SEPARATOR value in web/js/main.js!  
-options_separator: '-'
+options_separator: ','
 
 # Security: Signature generation
 # Security key
@@ -42,10 +42,10 @@ storage_system: local
 aws_s3:
   access_id: ''
   secret_key: ''
-  region: 'ap-south-1'
+  region: 'eu-central-1'
   bucket_name: ''
   # path_prefix: '' # optional
-  #visibility: 'PUBLIC' # options: PUBLIC or PRIVATE
+  #visibility: 'PRIVATE' # options: PUBLIC or PRIVATE
   #endpoint: 'https://%s.s3.%s.amazonaws.com/' # optional for third party S3 compatible services, the format is https://<bucket-name>.s3.<region>.amazonaws.com/
 
 # Number of threads for Imagemagick to use
@@ -115,7 +115,7 @@ options_keys:
 # Default options values
 default_options:
   quality: 90
-  output: avif
+  output: auto
   unsharp: null
   sharpen: null
   blur: null
